@@ -92,7 +92,7 @@ input_data = torch.randn(size=(BATCH_SIZE, IMG_CHANNELS, IMG_SIZE, IMG_SIZE))
 assert model(input_data).shape == torch.Size([BATCH_SIZE, NUM_CLASSES])
 
 hist = {
-    'loss': [0 * NUM_EPOCHS]
+    'loss': [0] * NUM_EPOCHS
 }
 
 for i in range(NUM_EPOCHS):
